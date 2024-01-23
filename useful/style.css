@@ -1,0 +1,607 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Vaiables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    /* position: sticky; */
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+/* Navigation Bar : Logo and Image */
+#logo{
+    margin: 2px 30px;
+}
+
+#logo img{
+    height: 65px;
+    margin: 6px 6px;
+    border-radius: 20px;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin: 0px 15px;
+    color: floralwhite;
+    border-radius: 10px;
+    position: sticky;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 633px;
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    /* background: url("https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3756498/pexels-photo-3756498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+    opacity: 0.9;
+    opacity: 0.9;
+    position: absolute;
+    height: 722px;
+    width: 100%;
+    z-index: -1;
+    top: -85px;
+    left: 0px;
+}
+
+#home h1{
+    color: floralwhite;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p{
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 3px 10px;
+    border-radius: 40px;
+    background-color: rgb(235, 227, 227);
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: justify;
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+    height: 400px;
+}
+
+#client-section::before{
+    content: "";
+    /* background:  url("https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover; */
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    z-index: -1;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   background-color: black;
+   flex-direction: row;
+}
+.reviews{
+    background-color: red;
+}
+.review1{
+    background-color: blue;
+}
+.reviews2{
+    background-color:green;
+}
+
+/* .client-items{
+} */
+
+.client-items img{
+    padding: 20px;
+    margin: 6px;
+    height: 200px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://cdn.pixabay.com/photo/2021/06/28/04/53/email-6370595_960_720.jpg") no-repeat center center/cover;
+}
+
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+
+#contactbox form{
+    width: 40%;
+}
+
+#contactbox label{
+    font-size: 1.5rem;
+}
+
+/* Footer Section */
+footer{
+    background: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 4.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    /* background-color: rgb(27, 27, 27); */
+    background-color: white;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+*{
+	margin:0;
+	padding:0;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-drag:none;
+	box-sizing:border-box!important;
+}
+
+body{
+		font-family: Roboto, Sans-serif;
+	}
+
+#container{
+	width:100%;
+	min-height: 500px;
+	height:100vh;
+	position: relative;
+	background: #e2e2e2;
+	overflow: visible;
+}
+#holder{
+	max-width: 700px;
+	width: 98%;
+	min-height: 360px;
+	height:360px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#image{
+	width: 40%;
+	height: 100%;
+	float: left;
+	position: relative;
+	z-index: 200;
+	/* background:; */
+	box-shadow:0px 40px 120px 0px rgba(0,0,0,.52);
+	overflow: visible;
+}
+#right{
+	width: 60%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+#text{
+	width: 60%;
+	height: 320px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 100;
+	background: rgba(255,255,255,.57);
+	box-shadow:0px 40px 120px 0px rgba(0,0,0,.52);
+}
+a{
+	display: block;
+	text-decoration: none;
+	outline: none;
+	outline-color: none;
+
+}
+nav{
+	width: 140px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin:0 0 -25px -70px;
+	z-index: 1000;
+	box-shadow:0px 7px 24px 3px rgba(0,0,0,.52);
+  display:none;
+}
+#leftBtn{
+	width:50%;
+	height: 100%;
+	float: left;
+	color: rgba(255,255,255,.57);
+	background:#232323;
+	font-size: 25px;
+	line-height: 200%;
+	text-align: center;
+	border-right:1px solid rgba(255,255,255,.57);
+	cursor: pointer;
+	-webkit-transition:all .3s ease-in;
+	-moz-transition:all .3s ease-in;
+	-o-transition:all .3s ease-in;
+	transition:all .3s ease-in;
+}
+#rightBtn{
+	width:50%;
+	height: 100%;
+	float: right;
+	color: rgba(255,255,255,.57);
+	background:#232323;
+	font-size: 25px;
+	line-height: 200%;
+	text-align: center;
+	border-left:1px solid rgba(255,255,255,.57);
+	cursor: pointer;
+	-webkit-transition:all .3s ease-in;
+	-moz-transition:all .3s ease-in;
+	-o-transition:all .3s ease-in;
+	transition:all .3s ease-in;
+}
+#leftBtn:hover,#rightBtn:hover{
+	color: #fff;
+}
+#nav-cirlces{
+	width: 96px;
+	height: 20px;
+	position: absolute;
+	bottom: 8%;
+	left: 50%;
+	margin-left: -50px;
+}
+.circle{
+	width: 20px;
+	height: 100%;
+	float: left;
+	border-radius:100%;
+	border:2px solid #232323;
+	margin:0 6px;
+	cursor: pointer;
+	-webkit-transition:all .75s  cubic-bezier(.86,.3,.07,1);
+	-moz-transition:all .75s  cubic-bezier(.86,.3,.07,1);
+	-o-transition:all .75s  cubic-bezier(.86,.3,.07,1);
+	transition:all .75s  cubic-bezier(.86,.3,.07,1);
+}
+#centerText{
+	width: 100%;
+	height:200px;
+	position: absolute;
+	top: 20%;
+	margin-top:-100px;
+	padding: 10px 0;
+	overflow: visible;
+}
+p{	
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	right: -150px;
+	bottom: 0;
+	margin: auto;	
+	font-size: 20px;
+	color: #232323;
+	padding: 0 25px;
+	text-align:center;
+	opacity: 0;
+	-webkit-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	-moz-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	-o-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+}
+p.quote.active{
+	right:0;
+	opacity: 1;
+	background: transparent;
+}
+p.quote:nth-child(2){
+	top: 25px;
+}
+.active{
+	background: #232323;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: -100%;
+	background-position: center !important;
+	background-size:cover;	
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 400;
+	-webkit-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	-moz-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	-o-transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+	transition:all 2s  cubic-bezier(.86,.3,.03,1) , opacity .7s cubic-bezier(.86,.3,.47,1) .3s;
+}
+.img.active{
+	right:0;
+	opacity: 1;
+	z-index: 500;
+}
+.jobs{
+	background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/stevejobs-s.jpg);
+}
+.zuck{
+	background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/markzuck-s.jpg);
+}
+.musk{
+	background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/elonmusk-s.jpg);
+}
+
+#bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.slide{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*right: -100%;*/
+	opacity: 0;	
+	-webkit-transition:all 1.5s ease;
+	-moz-transition:all 1.5s ease;
+	-o-transition:all 1.5s ease;
+	transition:all 1.5s ease;	
+}
+.slide.active{
+	/*right: 0%;*/
+	opacity: 1;
+}
+.jobs-bg{
+	/* background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/stevejobs-bg.jpg); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.zuck-bg{
+	/* background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/markzuck-bg.jpg); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.musk-bg{
+	/* background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/elonmusk-bg.jpg); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width:700px){
+
+	#centerText p{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:580px){
+
+#holder{
+	max-width: 700px;
+	width: 100%;
+	min-height: 360px;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: red;
+	margin: auto;
+}
+.img{
+	background-position:top center !important;
+}
+#image{
+	width: 220px;
+	height:250px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -110px;
+}
+#right{
+	width: 100%;
+	height: 100%;
+	float: right;
+	position: relative;
+	background: blue;
+}
+#text{
+	width: 90%;
+	height: 320px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#nav-cirlces{
+	display: none;
+}
+#centerText{
+	width: 100%;
+	height:200px;
+	position: absolute;
+	top: 30%;
+	margin-top:-100px;
+	padding: 150px 0!important;
+	overflow: visible;
+}
+
+}
+
+@media screen and (max-width:450px){
+#image{
+	width: 200px;
+	height:230px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -100px;
+}
+
+#text{
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#nav-cirlces{
+	display: none;
+}
+#centerText{
+	width: 100%;
+	height:200px;
+	position: absolute;
+	top: 30%;
+	margin-top:-100px;
+	padding: 120px 0!important;
+	overflow: visible;
+}
+
+}
